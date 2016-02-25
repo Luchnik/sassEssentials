@@ -32,3 +32,14 @@ $color-btn-cool: $blue;
 	@extend %btn;
 	background: $color-btn-cool;
 }
+
+.grid {
+	@include clearfix;
+	.item {
+		float: left;
+		@include imagegrid(5, 1%);
+	}
+	img {
+		display: block;
+	}
+}
